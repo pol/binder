@@ -7,4 +7,4 @@ final: prev: let
     );
   };
 in
-  {} // addNativeBuildInputs "contourpy" [final.mesonpy]
+  {} // addNativeBuildInputs "contourpy" [final.meson-python]
