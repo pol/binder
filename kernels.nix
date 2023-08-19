@@ -9,7 +9,12 @@
     # The point is you can have a bunch of folders of different python envs to choose from.
     # so you could have 'kernel.python.minimal' and 'kernel.python.datasci', and each would have its own projectDir.
     projectDir = ./minimal-python;
+
+    # overrides because the build failed for one or more packages
+    overrides = ./overrides.nix;
   };
+# not sure why this is failing
+  # add the go kernel
   kernel.go.minimal = {
     enable = true;
   };
